@@ -35,8 +35,52 @@
   .icon {
     font-size: 5rem;
     color: rgb(64, 216, 196);
+    padding-left: 1rem;
   }
 
   .iconImg {
     height: 5rem;
+    padding-left: 1rem;
   }
+
+  HTML CSSResult
+EDIT ON
+body {
+ padding-top: 25px;  
+}
+
+
+
+.scrollingIcons {
+ overflow: hidden;
+ position: relative;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);    
+ transform:translateX(100%);
+ /* Apply animation to this element */  
+ -moz-animation: scrollingIcons 10s linear infinite;
+ -webkit-animation: scrollingIcons 10s linear infinite;
+ animation: scrollingIcons 10s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scrollingIcons {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scrollingIcons {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scrollingIcons {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%);       
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
