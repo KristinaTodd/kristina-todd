@@ -43,17 +43,22 @@
     padding-left: 1rem;
   }
 
+  .scrollMargin {
+    margin-top: 5.5rem;
+  }
+
 .scrollingIcons {
  overflow: hidden;
- position: relative;
+ position: absolute;
  /* Starting position */
  -moz-transform:translateX(100%);
  -webkit-transform:translateX(100%);    
  transform:translateX(100%);
  /* Apply animation to this element */  
- -moz-animation: scrollingIcons 10s linear infinite;
- -webkit-animation: scrollingIcons 10s linear infinite;
- animation: scrollingIcons 10s linear infinite;
+ -moz-animation: scrollingIcons 15s linear infinite;
+ -webkit-animation: scrollingIcons 15s linear infinite;
+ animation: scrollingIcons 15s linear infinite;
+ right: 0;
 }
 /* Move it (define the animation) */
 @-moz-keyframes scrollingIcons {
@@ -65,6 +70,42 @@
  100% { -webkit-transform: translateX(-100%); }
 }
 @keyframes scrollingIcons {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%);       
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%); 
+ }
+}
+
+.scrollIconsDelayed {
+ overflow: hidden;
+ position: absolute;
+ animation-delay: 7.5s !important;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);    
+ transform:translateX(100%);
+ /* Apply animation to this element */  
+ -moz-animation: scrollIconsDelayed 15s linear infinite;
+ -webkit-animation: scrollIconsDelayed 15s linear infinite;
+ animation: scrollIconsDelayed 15s linear infinite;
+ right: 0;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scrollIconsDelayed {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scrollIconsDelayed {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scrollIconsDelayed {
  0%   { 
  -moz-transform: translateX(100%); /* Firefox bug fix */
  -webkit-transform: translateX(100%); /* Firefox bug fix */
