@@ -80,7 +80,7 @@
                 <h5 class="card-title">Blockr</h5>
                 <p class="card-text plain-text">A "Pinterest" style site where users can log in and store images on
                   boards. Built in Vue, C#, and MySQL.</p>
-                <a href="https://github.com/KristinaTodd/block-r" class="btn buttonCard">View Code</a>
+                <a href="https://github.com/KristinaTodd/block-r" target="_blank" class="btn buttonCard">View Code</a>
               </div>
             </div>
           </div>
@@ -99,8 +99,8 @@
                   development. Built in
                   Vue and
                   Javascript, utilizing websockets.</p>
-                <a href="https://darebear.herokuapp.com/#/" class="btn buttonCard">View Site</a><a
-                  href="https://github.com/KristinaTodd/DareBear" class="btn buttonCard">View Code</a>
+                <a href="https://darebear.herokuapp.com/#/" target="_blank" class="btn buttonCard">View Site</a><a
+                  href="https://github.com/KristinaTodd/DareBear" target="_blank" class="btn buttonCard">View Code</a>
               </div>
             </div>
           </div>
@@ -117,8 +117,9 @@
                 <h5 class="card-title">NeatureBoard</h5>
                 <p class="card-text plain-text">A "Trello" style board where users can log in and make boards and lists.
                   Built using Vue and Javascript, utilizing Auth0.</p>
-                <a href="https://neature-board.herokuapp.com/#/" class="btn buttonCard">View Site</a><a
-                  href="https://github.com/Noah-Preston/NeatureBoard" class="btn buttonCard">View Code</a>
+                <a href="https://neature-board.herokuapp.com/#/" target="_blank" class="btn buttonCard">View Site</a><a
+                  href="https://github.com/Noah-Preston/NeatureBoard" target="_blank" class="btn buttonCard">View
+                  Code</a>
               </div>
             </div>
           </div>
@@ -136,8 +137,9 @@
                 <p class="card-text plain-text">A click style game where you collect gold and buy different items to
                   increase your
                   looting. Built in Javascript.</p>
-                <a href="https://kristinatodd.github.io/pirate-pillagers/" class="btn buttonCard">View Site</a><a
-                  href="https://github.com/KristinaTodd/pirate-pillagers" class="btn buttonCard">View Code</a>
+                <a href="https://kristinatodd.github.io/pirate-pillagers/" target="_blank" class="btn buttonCard">View
+                  Site</a><a href="https://github.com/KristinaTodd/pirate-pillagers" target="_blank"
+                  class="btn buttonCard">View Code</a>
               </div>
             </div>
           </div>
@@ -149,22 +151,55 @@
 
   <footer class="footer container-fluid align-bottom background">
     <div class="row">
-      <div class="col-1">
-      </div>
-      <div class="col-2 name-font text-white text-center">
+      <div class="col-12 name-font text-white text-center">
         <span>Kristina Todd</span>
       </div>
-      <div class="col-9"></div>
-      <div class="col-1"></div>
-      <div class="col-2 plain-text text-white text-center">208.995.1719</div>
-      <div class="col-6"></div>
-      <div class="col-3 text-white ">
-        <a href="https://www.linkedin.com/in/kristina-todd" class="btn" target="_blank"><i
-            class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/KristinaTodd" class="btn" target="_blank"><i class="fab fa-github-square"></i></a>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center plain-text pt-0 mb-3">
+        <!-- Button trigger modal -->
+        <button type=" button" class="btn" data-toggle="modal" data-target="#exampleModal">
+          Contact Me
+        </button>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title name-font" id="exampleModalLabel" style="color: rgb(2, 2, 59);">Contact Me</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-12">
+                  <h5 class="name-font" style="color: rgb(2, 2, 59);">Email:</h5>
+                </div>
+                <div class="col-12 plain-text">
+                  <p>kristina.todd22@gmail.com</p>
+                </div>
+                <div class=" col-12">
+                  <h5 class="name-font" style="color: rgb(2, 2, 59);">Phone Number:</h5>
+                </div>
+                <div class="col-12 plain-text">
+                  <p>208.995.1719</p>
+                </div>
+              </div>
+            </div>
+            <div class=" modal-footer">
+              <button type="button" class="btn background p-2" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
+
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
